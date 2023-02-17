@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Quote Generator</title>
+    <link
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/all.min.css"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <div class="quote-container" id="quote-container">
+      <!-- Quote -->
+      <div class="quote-text">
+        <i class="fas fa-quote-left"></i>
+        <!-- we are using span because it quote icon is not gonna take any space from page, only
+          the text, we are also using id of quote to dynamically target it with JS and change inner text -->
+        <span id="quote"></span>
+      </div>
+      <!-- Author -->
+      <div class="quote-author">
+        <span id="author"></span>
+      </div>
+      <!-- Buttons -->
+      <div class="button-container">
+        <button class="twitter-button" id="twitter" title="Tweet this quote!">
+          <i class="fab fa-twitter"></i>
+        </button>
+        <button id="new-quote" class="new-quote-btn">New Quote</button>
+      </div>
+    </div>
+    <!-- Load -->
+    <div class="loader" id="loader"></div>
+    <!-- Script -->
+    <script src="script.js"></script>
+  </body>
+</html>
